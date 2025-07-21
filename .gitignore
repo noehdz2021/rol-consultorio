@@ -1,0 +1,22 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Dependencias (si las agregas en el futuro)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log* 

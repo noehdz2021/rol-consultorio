@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rol de Consultorio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏥 Rol de Consultorio</h1>
+            <p>Consulta tus próximos turnos</p>
+        </header>
+
+        <main class="main-content">
+            <div class="selection-card">
+                <h2>Selecciona tu nombre</h2>
+                <div class="select-wrapper">
+                    <select id="userSelect" class="user-select">
+                        <option value="">-- Selecciona tu nombre --</option>
+                        <option value="AZUCENA">AZUCENA</option>
+                        <option value="ADDY">ADDY</option>
+                        <option value="CARMEN">CARMEN</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="results" class="results-container" style="display: none;">
+                <div class="user-info">
+                    <h3 id="userName"></h3>
+                    <div class="user-color-indicator" id="userColorIndicator"></div>
+                </div>
+                
+                <div class="schedule-info">
+                    <h4>Próximos 10 turnos:</h4>
+                    <div id="scheduleList" class="schedule-list"></div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-card">
+                        <span class="stat-number" id="totalShifts">0</span>
+                        <span class="stat-label">Total de turnos</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="nextShift">-</span>
+                        <span class="stat-label">Próximo turno</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Buscando turnos...</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Sistema de Rol de Consultorio</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
